@@ -2,4 +2,6 @@
 <div><%= @task.details %></div>
      <li><input type="checkbox" <%= "checked" if @task.completed %>> <p>"Done"</p></li>
 
+<%= link_to "Edit the task", edit_task_path %>
+
 <%= link_to "Back to List", tasks_path %>
